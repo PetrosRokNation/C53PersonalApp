@@ -252,7 +252,9 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -302,6 +304,19 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\C53PersonalApp.Models\C53PersonalApp.Models.csproj">
+      <Project>{1a71f28f-8b0d-4cf6-9756-aa516ecd8b10}</Project>
+      <Name>C53PersonalApp.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\C53PersonalApp.Services\C53PersonalApp.Services.csproj">
+      <Project>{77c3ff69-2ad0-43fc-b96e-e928b487fa3e}</Project>
+      <Name>C53PersonalApp.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

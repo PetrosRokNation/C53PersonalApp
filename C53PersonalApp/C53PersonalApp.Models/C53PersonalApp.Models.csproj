@@ -44,15 +44,16 @@
     <Compile Include="Domain\UserRegistration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Requests\UserRegistrationAddRequest.cs" />
+    <Compile Include="Responses\BaseResponse.cs" />
+    <Compile Include="Responses\ErrorResponse.cs" />
+    <Compile Include="Responses\ItemResponse.cs" />
+    <Compile Include="Responses\ItemsResponse.cs" />
+    <Compile Include="Responses\LoginResponse.cs" />
+    <Compile Include="Responses\ReplyResponse.cs" />
+    <Compile Include="Responses\SuccessResponse.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Debug\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Web\C53PersonalApp.Web.csproj">
-      <Project>{d2e78329-10c6-472b-84eb-d8a9dbb2b265}</Project>
-      <Name>C53PersonalApp.Web</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
